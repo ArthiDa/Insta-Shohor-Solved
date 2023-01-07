@@ -174,7 +174,9 @@ const displayReportedPosts = () => {
 };
 
 const loadPosts = async () => {
-  let data = await fetch("https://raw.githubusercontent.com/ArthiDa/Insta-Shohor-Solved/main/data/posts.json");
+  let data = await fetch(
+    "https://raw.githubusercontent.com/ArthiDa/Insta-Shohor-Solved/main/data/posts.json"
+  );
   posts = await data.json();
   showPosts(posts);
 };
